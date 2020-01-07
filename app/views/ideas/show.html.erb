@@ -1,17 +1,28 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>"Your name":</strong>
+  <strong>Your name : </strong>
   <%= @idea.name %>
 </p>
-<br>
+
+  <br>
+
 <p>
-  <strong>"Description of you":</strong>
+  <strong>Your Knowledge : </strong>
+  <%= @idea.Knowledge %>
+</p>
+
+  <br>
+
+<p>
+  <strong>Description of you : </strong>
   <%= @idea.description %>
 </p>
-<br>
+
+  <br>
+
 <p>
-  <strong>"Your picture":</strong>
+  <strong>Your picture : </strong>
   <%= image_tag(@idea.picture_url, width: 100) if @idea.picture.present? %>
 </p>
 

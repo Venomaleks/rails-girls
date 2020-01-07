@@ -5,9 +5,14 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Name </th>
+      
+      <th>Knowledge</th>
+
       <th>Description</th>
-      <th>Picture</th>
+      
+      <th> Picture</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +21,7 @@
     <% @ideas.each do |idea| %>
       <tr>
         <td><%= idea.name %></td> <br>
+        <td><%= idea.Knowledge %></td> <br>
         <td><%= idea.description %></td> <br>
         <td><%= image_tag idea.picture_url, width: '100%' if idea.picture.present? %></td> <br>
         <td><%= link_to 'Show', idea %></td> 
