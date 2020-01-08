@@ -10,7 +10,10 @@ default: &default
   timeout: 5000
 
 development:
- production:
+  <<: *default
+  database: db/development.sqlite3
+
+production:
   adapter: postgresql
   encoding: unicode
   database: railsgirls_production
