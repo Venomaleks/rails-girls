@@ -1,8 +1,12 @@
 
 
 <div class="row">
-  <div class="col-md-9">
-    <%= image_tag(@idea.picture_url, width: '50%') if @idea.picture.present? %>
+  <div class="col-md-3">
+    <p><b>Made by: </b> <%= %></p>
+  </div>
+
+  <div class="col-md-6">
+    <%= image_tag(@idea.picture_url, width: '40%') if @idea.picture.present? %>
   </div>
 
   <div class="col-md-3">
