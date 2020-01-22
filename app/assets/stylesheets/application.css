@@ -40,3 +40,18 @@ footer {
   padding: 30px 0;
   margin-top: 100px;
 }
+
+.extraStyle {
+  background-color: rgba(230, 230, 250, 0.452);
+  color: grey;
+  padding: 30px 30px;
+  margin: 10px 10px; 
+  border-radius: 50px;
+  border: 2px solid rgb(0, 0, 0); 
+}
+
+.discText{
+  color: rgba(139, 0, 0, 0.900);
+  background-color: rgba(135, 206, 250, 0.450);
+  border-radius: 5px;
+}

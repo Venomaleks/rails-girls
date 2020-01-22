@@ -10,33 +10,34 @@
       </ul>
     </div>
   <% end %>
+  <div class="col-md-6">
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+    <div class="field">
+      <%= form.label :name %>:
+      <%= form.text_field :name %>
+    </div><hr>
+    <br>
 
-  <div class="filed">
-        <%= form.label :Knowledge %>
-        <%= form.text_area :Knowledge %>
-  </div>
-  <br>
+    <div class="field">
+          <%= form.label :Knowledge %><br>
+          <%= form.text_area :Knowledge %>
+    </div><hr>
+    <br>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
+    <div class="field">
+      <%= form.label :description %><br>
+      <%= form.text_area :description %>
+    </div><hr>
+    <br>
 
-  <br>
+    <div class="field">
+      <%= form.label :picture %>
+      <%= form.file_field :picture %>
+    </div><hr>
+    <br>
 
-  <div class="field">
-    <%= form.label :picture %>
-    <%= form.file_field :picture %>
-  </div>
-
-  <br>
-
-  <div class="actions">
-    <%= form.submit %>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
   </div>
 <% end %>
