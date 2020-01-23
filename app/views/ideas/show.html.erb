@@ -1,18 +1,17 @@
 
+<div>
+  <p><b>Made by: </b> <%= %></p>
+</div>
 
 <div class="row">
-  <div class="col-md-3">
-    <p><b>Made by: </b> <%= %></p>
+  <div class="col-md-4 extraImg">
+    <%= image_tag(@idea.picture_url, width: '100%') if @idea.picture.present? %>
   </div>
 
-  <div class="col-md-6">
-    <%= image_tag(@idea.picture_url, width: '40%') if @idea.picture.present? %>
-  </div>
-
-  <div class="col-md-3">
+  <div class="col-md-3 extraText">
     <p><b>Name: </b><%= @idea.name %></p>
     <p><b>Description: </b><%= @idea.description %></p>
-    <p><b>Knowledg: </b></p>
+    <p><b>Knowledg: </b><%=%></p>
     <p>
       <%# link_to 'Edit', edit_idea_path(@idea) %>
       <%# link_to 'Destroy', @idea, data: { confirm: 'Are you sure?' }, method: :delete %>
